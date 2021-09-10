@@ -1,0 +1,31 @@
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid var(--lght-gray);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 10;
+  }
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: var(--yellow);
+    opacity: .6;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .5s, height .5s, opacity .5s;
+    z-index: 10;
+}
+.cursorhover {
+    width: 35px;
+    height: 35px;
+    opacity: 0.8;
+}

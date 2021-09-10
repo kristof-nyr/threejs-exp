@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&display=swap');
+
+:root {
+    /* FONTS */
+   --roboto: 'Roboto', sans-serif;
+   --archivo: 'Archivo', sans-serif;
+   --light_weight: 100;
+   --medium_weight: 300;
+   --bold_weight: 900;
+   --small: 1.25rem;
+   --medium: 2rem;
+   --large: 3rem;
+   /* COLORS */
+   --yellow: #ffcb05;
+   --lght-gray: #d9d9d9;
+   --med-gray: #a6a6a6;
+   --dark-gray: #252526;
+   --black: #121212;
+}

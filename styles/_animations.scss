@@ -1,0 +1,76 @@
+//NOTE classes 
+
+g[id^='TRI']{
+      animation: slide-top 2s linear infinite;
+      animation-delay: calc(var(--delay) * 650ms);
+}
+
+.js-scroll {
+      opacity: 0;
+      transition: opacity 500ms;
+    }
+    
+.js-scroll.scrolled {
+      opacity: 1;
+
+      &.fade-right {
+      animation: slide-right 1s ease both;
+      }
+}
+
+//classes ---------------------
+// NOTE keyframes  
+@keyframes slide-top{
+        0% { 
+            opacity:0; 
+            -webkit-transform: translateY(-30px); 
+            transform: translateY(-30px); 
+      }  
+       20% { 
+             opacity:1; 
+             -webkit-transform: translateY(-10px); 
+             transform: translateY(-10px); 
+      } 
+       80% { 
+             opacity:1; 
+             -webkit-transform: translateY(10px); 
+             transform: translateY(10px); 
+      }  
+      100% { 
+            opacity:0; 
+            -webkit-transform: translateY(30px); 
+            transform: translateY(30px); 
+      } 
+}     
+
+@keyframes slide-right {
+      0% {
+        -webkit-transform: translateX(5vw);
+        transform: translateX(5vw);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+
+@keyframes flowDown {
+      0% { opacity: 1; height: 100vh;}
+      100% { opacity: 0.5; height: 0;}
+}
+@keyframes flowLeft {
+      0% { 
+            opacity: 1; 
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+      }
+      100% { 
+            opacity: 0; 
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+      }
+}
+
+// NOTE keyframes---------- 
