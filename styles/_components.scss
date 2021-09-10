@@ -141,6 +141,7 @@ html{
             font-size: var(--x-large);
             padding: 0;
             margin: 0.2em;
+            user-select: none;
           }
 
           p { 
@@ -157,19 +158,18 @@ html{
 
             .pfp-container {
               position: relative;
-              width: 30rem;
-              height: 30rem;
               border: none;
 
               .pfp {
-                width: 40rem;
-                height: 40rem;
+                width: 35rem;
+                height: 35rem;
                 position: absolute;
-                background-image: url("Images/profile-pic.jpg");
+                background-image: url("Images/profile-pic.png");
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
                 border: none;
+                transform: translate(0%,20%);
                   span {
                     text-transform: uppercase;
                     font-weight: var(--bold_weight);
@@ -180,7 +180,7 @@ html{
                     filter: drop-shadow(0 0.5rem 0 var(--dark-gray));
                 }
                 .about-first-name {
-                  transform: translate(-5rem,5rem);
+                  transform: translate(-5rem,0rem);
                 }
                 .about-last-name {
                   transform: translate(10rem,22rem);
@@ -205,7 +205,7 @@ html{
           }
 
           &.skills {
-            grid-column: 2 / 8;
+            grid-column: 3 / 9;
             grid-row: 20 / 25;
           }
         }

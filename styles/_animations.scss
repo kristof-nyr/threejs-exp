@@ -16,6 +16,10 @@ g[id^='TRI']{
       &.fade-right {
       animation: slide-right 1s ease both;
       }
+
+      &.fade-left {
+      animation: slide-left 1s ease both;
+      }
 }
 
 //classes ---------------------
@@ -42,6 +46,19 @@ g[id^='TRI']{
             transform: translateY(30px); 
       } 
 }     
+
+@keyframes slide-left {
+      0% {
+        -webkit-transform: translateX(-5vw);
+        transform: translateX(-5vw);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
 
 @keyframes slide-right {
       0% {
