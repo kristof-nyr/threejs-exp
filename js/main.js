@@ -1,23 +1,3 @@
-// const timelineLink = document.querySelector('.timeline-open');
-// const timeline = document.querySelector('.timeline');
-// const timelineClose = document.querySelector('.timeline-close');
-
-// timelineLink.onclick = () => {
-//     timeline.style.transform = "translate(0)";
-// }
-
-// timelineClose.onclick = () => {
-//     timeline.style.transform = "translate(100%)";
-// }
-
-// timelineClose.onmouseover = () => {
-//     timelineClose.style.transform = "rotate(45deg)";
-// }
-
-// timelineClose.onmouseleave = () => {
-//     timelineClose.style.transform = "rotate(0deg)";
-// }
-
 const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {

@@ -61,7 +61,7 @@ function init(){
     }
     else {
         scrollButton.style.opacity = 1;
-    }    
+    }
   }
 
   function addGeometry() {
